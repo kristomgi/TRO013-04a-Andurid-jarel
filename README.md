@@ -109,3 +109,9 @@ Hindamine otsib `raja_andur.py` ja `marsruut.py` faile **kõikidest kaustadest**
 | `control_loop()` olekumasin implementeeritud | 10 p |
 | Kõik 4 olekut implementeeritud | 15 p |
 | `OLEK_VALMIS` kasutatud | 5 p |
+
+---
+
+## Küsimused ja lisainfo
+
+Kui midagi on ebaselge või vajad täiendavat selgitust, vaata Moodle kursuse **Moodul 04: Andurite liidestamine** peatükki — seal on üksikasjalikud juhised, näidiskood ja selgitused.
