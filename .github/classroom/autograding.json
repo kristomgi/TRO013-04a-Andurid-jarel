@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "raja_andur.py eksisteerib",
+      "setup": "",
+      "run": "python3 -c \"import glob, sys; files=[f for f in glob.glob('**/raja_andur.py', recursive=True) if not f.startswith('.github')]; sys.exit(0 if files else 1)\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "raja_andur.py Python suuntaks korrektne",
+      "setup": "",
+      "run": "python3 -c \"import glob, ast, sys; files=[f for f in glob.glob('**/raja_andur.py', recursive=True) if not f.startswith('.github')]; sys.exit(1) if not files else ast.parse(open(files[0]).read())\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "raja_andur: sektori_min() implementeeritud",
+      "setup": "",
+      "run": "python3 .github/tests/test_raja_andur.py sektori_min",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "raja_andur: 5 sektori kaugused arvutatud (mitte inf stub)",
+      "setup": "",
+      "run": "python3 .github/tests/test_raja_andur.py sectors",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "raja_andur: tabel trukitakse aktiivses koodis",
+      "setup": "",
+      "run": "python3 .github/tests/test_raja_andur.py table",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "marsruut.py eksisteerib",
+      "setup": "",
+      "run": "python3 -c \"import glob, sys; files=[f for f in glob.glob('**/marsruut.py', recursive=True) if not f.startswith('.github')]; sys.exit(0 if files else 1)\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "marsruut.py Python suuntaks korrektne",
+      "setup": "",
+      "run": "python3 -c \"import glob, ast, sys; files=[f for f in glob.glob('**/marsruut.py', recursive=True) if not f.startswith('.github')]; sys.exit(1) if not files else ast.parse(open(files[0]).read())\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "marsruut: control_loop olekumasin implementeeritud",
+      "setup": "",
+      "run": "python3 .github/tests/test_marsruut.py control_loop",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "marsruut: koik 4 olekut implementeeritud",
+      "setup": "",
+      "run": "python3 .github/tests/test_marsruut.py states",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "marsruut: OLEK_VALMIS kasutatud (marsruut lopetab)",
+      "setup": "",
+      "run": "python3 .github/tests/test_marsruut.py valmis",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 5
+    }
+  ]
+}
