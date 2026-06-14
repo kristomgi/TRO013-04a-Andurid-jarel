@@ -133,10 +133,12 @@ class Marsruut(Node):
             else:
                 self.stop_robot()
                 self.olek = OLEK_VALMIS
+                self.timer.cancel()
                 return
 
         elif self.olek == OLEK_VALMIS:
             self.stop_robot()
+            self.timer.cancel()
             return
 
         self.pub.publish(cmd)
